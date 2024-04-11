@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="descripcion"content="Tienes un negocio o brindas un servicio, muestra tus servicios con Nosotros!!."/>
+        <meta name="robots"content="index,follow"/>
+        <meta name="viewport" content="width=device-width,initial-sacel=1.0">
+        <title>CUENTAGOTAS</title>
+        <link rel="stylesheet" href=".formulario-oculto" media="screen">
+
+        <style>
+            #primerboton{
+                display:none;
+                background-color: #687091;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            nav{
+                background-color: #011561;
+                padding: 10px;
+              }
+              nav button{
+                background-color: transparent;
+                border: none;
+                color: rgb(241, 231, 231);
+                padding: 10px 20px;
+                margin-right: 10px;
+                cursor: pointer;
+              }
+              
+        </style>
+    </head>
+        <body>
+            <header class="header">
+                <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario al hacer clic en el botón</title>
+
+            </header>
+            <main>
+                 <nav>
+                <button onclick="primerboton('textoOculto1')">Quiénes somos</button>
+                <button onclick="primerboton('textoOculto2')">Misión y Visión</button>
+                <button onclick="primerboton('textoOculto3')">Servicios</button>
+                <button onclick="primerboton('textoOculto4')">Mejores Servicios</button>
+                <button onclick="primerboton('textoOculto5')">Postula tu servicio</button>
+              </nav>
+            </main>
+                <p id="textoOculto1" style="display:none;">Bienvenido a nuestro sitio web, una plataforma innovadora y vanguardista dedicada a la comodidad y flexibilidad de brindar servicios.Nos especializamos en promocionar negocios, mostrar productos y facilitar la adquisición de servicios. Todo lo que necesitas en tu vida cotidiana está aquí, accesible con solo un clic. Con nosotros, obtendrás lo que deseas de manera eficiente y satisfactoria.
+
+                  En nuestra comunidad, la honestidad, la responsabilidad y la calidad no son solo palabras; son los pilares que sostienen cada acción que emprendemos. Por eso, nos dedicamos a trabajar con integridad y compromiso por y para ti, garantizando una experiencia única que refleje nuestros altos estándares de excelencia.</p>
+                <p id="textoOculto2" style="display:none;">Misión: Nuestra misión es ser el portal líder en ofrecer una experiencia de usuario excepcional en la adquisición de servicios y promoción de negocios. Nos comprometemos a proporcionar una plataforma donde cada clic sea un paso hacia la satisfacción total, garantizando comodidad, eficiencia y flexibilidad. Nos esforzamos por mantener un entorno donde la honestidad, la responsabilidad y la calidad sean más que valores; sean la esencia de cada interacción con nuestra comunidad.
+
+                  Visión: Aspiramos a ser reconocidos como la comunidad digital más confiable y respetada en el ámbito de servicios y negocios en línea. Nuestra visión es construir un futuro donde nuestra plataforma sea sinónimo de innovación y confianza, y donde cada miembro de nuestra comunidad se sienta empoderado para alcanzar sus objetivos cotidianos con facilidad. En este futuro, cada usuario encontrará en nosotros un aliado incondicional que siempre trabaja por y para sus intereses.</p>
+                <p id="textoOculto3" style="display:none;"><img src="c:\Users\Ariana\Downloads\Pastel Rosa Bígaro y Blanco Salones Reapertura Comercial Horizontal Póster.jpg" alt="Descripcion de lo que se tiene que tener para formar parte de la comunidad"  width="500" height="500">Tipos de servicios aceptables para formar parate de la comunidad.Todo servicio,empresa o producto que busquen promocionarse en este sitio web, deben de cumplir con ciertas especificaciones previas,de no ser tomadas en cuenta el propietario tomara toda la responsabilidad en ella,mientrastanto nosotros no tendremos responsabilidades en ella.</p>
+                <p id="textoOculto4" style="display:none;">Mostrar los servicios mejor puntuados.</p>
+                <p id="textoOculto5" style="display:none;">¿Tienes un servicio que ofrecer? ¡Postúlalo aquí!.<body><span><button id="btnAbrirFormulario">Abrir Formulario</button></span>
+                    <form id="formulario" action="procesar_formulario.php" method="post" enctype="multipart/form-data" style="display: none;">  
+                    <h1>Crear Usuario</h1>
+                    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+                        <label for="nombre empresa">Nombre Empresa:</label>
+                        <input type="text" id="nombre" name="nombre empresa" required>
+                        <br><br>
+                        
+                        <label for="correo">Correo:</label>
+                        <input type="text" id="correo" name="Correo" required>
+                        <br><br>
+                        
+                        <label for="descripcion">Descripcion de lo que ofrece:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+                        <br><br>
+                        
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                        <br><br>
+                        
+                        <input type="submit" value="Enviar">
+                    </form>
+                </body></p>
+                
+  <script>
+  function primerboton(id) {
+      var texto=document.getElementById(id);
+      if (texto.style.display === "none") {
+          texto.style.display = "block";
+      } else {
+          texto.style.display = "none";
+      }
+
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    // Obtener una referencia al botón
+    var btnAbrirFormulario = document.getElementById('btnAbrirFormulario');
+
+    // Agregar un evento de clic al botón
+    btnAbrirFormulario.addEventListener('click', function() {
+        // Mostrar el formulario al hacer clic en el botón
+        document.getElementById('formulario').style.display = 'block';
+    });
+});
+    </script>
+  </div>
+  </body>
+    <body>
+    <h2 align-items:center;>Unete a nuestra comunidad</h2>
+    <figure style="margin: 0;">
+    <img src="c:\Users\Ariana\Downloads\Verde y Blanco Zapatos Belleza y Moda Outro de Video de YouTube.jpg"  width="700" height="500" >
+    <figcaption>Imagen</figcaption>
+</figure>
+<p>La era digital ha llegado, toma las riendas de tu negocio y crece junto a nosotros</p>
+</div></body>
+  <body>
+    <h2></h2>
+  </body>
+
+    </html>    

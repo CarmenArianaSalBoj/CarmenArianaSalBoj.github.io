@@ -1,0 +1,13 @@
+.formulario-oculto {
+    display: none;
+    /* Agrega estilos adicionales según tus preferencias */
+}
+
+.formulario-visible {
+    display: block;
+    color: rgb(107, 107, 202);
+    background-color: aquamarine;
+    border: 2px solid black;
+
+    /* Agrega estilos adicionales según tus preferencias */
+}
